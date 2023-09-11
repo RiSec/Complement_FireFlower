@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+@media screen and (min-width: 768px){
 html{
     font-size: 100%;
     /*background-color: rgb(18, 18, 95);*/
@@ -8,6 +9,7 @@ img{
     width: 100%;
 }
 body{
+
     max-height: 844px;
     /*background-image: url(./img/event013.png) !important;
     background-repeat: no-repeat;
@@ -17,10 +19,7 @@ body{
     font-family: 'Chokokutai', cursive; 
     font-family: 'Reggae One', cursive;
 }
-body .title{
-    font-family: 'Chokokutai', cursive; 
-    font-family: 'Reggae One', cursive;
-}
+
 
 /*javascript*/
 .mypic-1{
@@ -28,8 +27,8 @@ body .title{
     z-index: 100;
     width: 5rem;
     height: 5rem;
-    top: 70%;
-    left: 60%;
+    top: 65%;
+    left: 67%;
     transform: translate(-50%,-50%);
 }
 .mypic-2{
@@ -37,8 +36,8 @@ body .title{
     z-index: 100;
     width: 5rem;
     height: 5rem;
-    top: 70%;
-    left: 40%;
+    top: 65%;
+    left: 33%;
     transform: translate(-50%,-50%);
 }
 
@@ -50,28 +49,48 @@ body .title{
     position: relative;
     background-color: rgb(13, 13, 96);
     margin-bottom:0 ;
+    background-image: url(img/event013.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
 }
-
-/*続き　pc画面で高さを調整する*/
-.background img{
-
-}
-
 
 /*title*/
 main{
     width: 100%;
-    /*background-color: aqua;*/
+    background-color:rgba(0, 0, 0, .5);
+    height: 200px;
     position: absolute;
-    top: 15%;
+    top: 2%;
     left: 50%;
     transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-between;
     
 }
 main .title{
+    /*background-color:aquamarine;*/
     color: aliceblue;
+    margin-left: 50px;
     text-align: center;
+    vertical-align: middle;
     font-size: 5rem;
+}
+main .flex-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main .attention{
+    /*background-color: aqua;*/
+    margin-right: 50px;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 2rem;
+    color: aliceblue;
+    font-family: 'Chokokutai', cursive;
+font-family: 'Reggae One', cursive;
+font-family: 'Yuji Hentaigana Akebono', cursive;
 }
 
 
@@ -79,9 +98,9 @@ main .title{
 aside{
     width: 60%;
     /*background-color: aqua;*/
-    margin-bottom: 30%;
+    /*margin-bottom: 30%;*/
     position: absolute;
-    top: 80%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
@@ -104,13 +123,14 @@ aside{
 }
 #wrapper a:link { color: #000000; }
 #wrapper a:visited { color: #000000; }
+}
 
 
 
 
-
-/*pc対応*/
-@media screen and (max-width:1024px){
+/*--------------------------------------------------------------------------------------------------------------*/
+/*スマホ対応*/
+@media screen and (max-width:768px){
 
 
 html{
@@ -159,6 +179,10 @@ body{
     position: relative;
     background-color: rgb(13, 13, 96);
     margin-bottom:0 ;
+    background-image: url(img/event013.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
 }
 
 /*title*/
@@ -177,6 +201,9 @@ main .title{
     color: aliceblue;
     text-align: center;
     font-size: 3rem;
+}
+.flex-2{
+    display: none;
 }
 
 
