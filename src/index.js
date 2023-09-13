@@ -3,12 +3,28 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import UploadPage from './components/Upload/UploadPage';
+import TopPage from './components/TopPage';
+import Audio from './components/Audio/audio';
+import ImageReceive from './components/Upload/ImageReceive';
+import Fireworks from 'fireworks-js';
+import FireworksPage from './components/Upload/FireworksPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <BrowserRouter>
     <App />
-  </React.StrictMode>
+    <Routes>
+      <Route path={`/`} element={<TopPage />} />
+      <Route path='/UploadPage' element={<UploadPage />} />
+      <Route path='/AudioPage' element={<Audio />} />
+      <Route path='/UploadPage/ImageRecievege' element={<ImageReceive />} />
+      <Route path='/UploadPage/ImageRecievege/FireworksPage' element={<FireworksPage />} />
+    </Routes>
+
+  </BrowserRouter>
+
 );
 
 // If you want to start measuring performance in your app, pass a function

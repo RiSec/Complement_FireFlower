@@ -1,0 +1,269 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    html {
+        font-size: 100%;
+        /*background-color: rgb(18, 18, 95);*/
+    }
+
+    img {
+        width: 100%;
+    }
+
+    body {
+
+        max-height: 844px;
+        /*background-image: url(./img/event013.png) !important;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center top;*/
+        margin: 0;
+        font-family: 'Chokokutai', cursive;
+        font-family: 'Reggae One', cursive;
+    }
+
+
+    /*javascript*/
+    .mypic-1 {
+        position: absolute;
+        z-index: 100;
+        width: 5rem;
+        height: 5rem;
+        top: 65%;
+        left: 67%;
+        transform: translate(-50%, -50%);
+    }
+
+    .mypic-2 {
+        position: absolute;
+        z-index: 100;
+        width: 5rem;
+        height: 5rem;
+        top: 65%;
+        left: 33%;
+        transform: translate(-50%, -50%);
+    }
+
+
+
+    /*header*/
+    .background {
+        height: 100vh;
+        position: relative;
+        background-color: rgb(13, 13, 96);
+        margin-bottom: 0;
+        background-image: url(./img/event013.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top center;
+    }
+
+    /*title*/
+    main {
+        width: 100%;
+        background-color: rgba(0, 0, 0, .5);
+        height: 200px;
+        position: absolute;
+        top: 2%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    main .title {
+        /*background-color:aquamarine;*/
+        color: aliceblue;
+        margin-left: 50px;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 5rem;
+    }
+
+    main .flex-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    main .attention {
+        /*background-color: aqua;*/
+        margin-right: 50px;
+        text-align: center;
+        margin-top: 100px;
+        font-size: 2rem;
+        color: aliceblue;
+        font-family: 'Chokokutai', cursive;
+        font-family: 'Reggae One', cursive;
+        font-family: 'Yuji Hentaigana Akebono', cursive;
+    }
+
+
+    /*aside*/
+    aside {
+        width: 60%;
+        /*background-color: aqua;*/
+        /*margin-bottom: 30%;*/
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #wrapper {
+        width: 70%;
+        padding: 25px 0;
+        border: 1px solid;
+        border-radius: 30px;
+        margin: 75px auto;
+        background-color: white;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    #wrapper a {
+        text-decoration: none;
+        color: rgb(rgb(45, 43, 43));
+    }
+
+    #wrapper a:hover {
+        opacity: 0.5;
+    }
+
+    #wrapper a:link {
+        color: #000000;
+    }
+
+    #wrapper a:visited {
+        color: #000000;
+    }
+}
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------------*/
+/*スマホ対応*/
+@media screen and (max-width:768px) {
+
+
+    html {
+        font-size: 100%;
+        /*background-color: rgb(18, 18, 95);*/
+    }
+
+    img {
+        width: 100%;
+    }
+
+    body {
+        max-height: 844px;
+        /*background-image: url(./img/event013.png) !important;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center top;*/
+        margin: 0;
+        font-family: 'Chokokutai', cursive;
+        font-family: 'Reggae One', cursive;
+    }
+
+    /*javascript*/
+    .mypic-1 {
+        position: absolute;
+        z-index: 100;
+        width: 3rem;
+        height: 3rem;
+        top: 60%;
+        left: 78%;
+        transform: translate(-50%, -50%);
+    }
+
+    .mypic-2 {
+        position: absolute;
+        z-index: 100;
+        width: 3rem;
+        height: 3rem;
+        top: 60%;
+        left: 22%;
+        transform: translate(-50%, -50%);
+    }
+
+
+
+    /*header*/
+    .background {
+        height: 100vh;
+        position: relative;
+        background-color: rgb(13, 13, 96);
+        margin-bottom: 0;
+        background-image: url(./img/event013.png);
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: contain;
+    }
+
+    /*title*/
+    main {
+        width: 100%;
+        /*background-color: aqua;*/
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    main .title {
+
+        margin-top: 0%;
+        color: aliceblue;
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .flex-2 {
+        display: none;
+    }
+
+
+    /*aside*/
+    aside {
+        width: 100%;
+        /*background-color: aqua;*/
+        margin-bottom: 30%;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #wrapper {
+        width: 70%;
+        padding: 25px 0;
+        border: 1px solid;
+        border-radius: 30px;
+        margin: 75px auto;
+        background-color: white;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    #wrapper a {
+        text-decoration: none;
+        color: rgb(rgb(45, 43, 43));
+    }
+
+    #wrapper a:hover {
+        opacity: 0.5;
+    }
+
+    #wrapper a:link {
+        color: #000000;
+    }
+
+    #wrapper a:visited {
+        color: #000000;
+    }
+
+}
