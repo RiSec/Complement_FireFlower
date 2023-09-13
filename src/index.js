@@ -4,12 +4,11 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import UploadPage from './components/Upload/UploadPage';
+import UploadPage from './components/UpLoad/UploadPage';
 import TopPage from './components/TopPage';
 import Audio from './components/Audio/audio';
-import ImageReceive from './components/Upload/ImageReceive';
-import Fireworks from 'fireworks-js';
-import FireworksPage from './components/Upload/FireworksPage';
+import ImageReceive from './components/UpLoad/ImageReceive';
+import FireworksPage from './components/UpLoad/FireworksPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

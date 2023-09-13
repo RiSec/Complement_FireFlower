@@ -1,5 +1,4 @@
 import Fireworks from "fireworks-js";
-import FireworksFunc from "./FireworksFunc";
 import { useEffect } from "react";
 import { useLocation, useParams, useRoutes } from "react-router-dom";
 
