@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta name="viewport" content="width=device-width">
-    <title>Document</title>
-
     <!--Google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chokokutai&family=Reggae+One&display=swap" rel="stylesheet">
+    <title>Document</title>
 </head>
 <body>
     <header>
@@ -18,21 +17,24 @@
         </div>
     </header>
 
-    <main>
-        <div class="text-1">
-            <p class="linethrough">大嫌いなあいつの</p>
-            <p>写真を選ぼう！</p>
+    <section>
+        <div class="button">
+            <a href="../explosion/index.html" class="button_top">戻る</a>
         </div>
-        <div class="text-2">
-            <p id="button">写真を選択する</p>
+    </section>
+
+    <main>
+        <div class="shout">
+            <p>叫べ！</p>
+        </div>
+        <div class="voice" id="voice-handler">
+            <!--<img src="../img/maiku.png">-->
+        </div>
+        <div class="REC">
+            <div class="text">REC</div>
+            <div id="box" onclick="color_handler" class="color"></div>
         </div>
     </main>
-
-    <section>
-    <div class="button">
-        <a href="../index.html" class="button_top">戻る</a>
-    </div>
-    </section>
 
     <aside>
         <div class="home">
@@ -42,5 +44,7 @@
             <a href ="../index.html"><img src="../img/ranking.png"></a>
         </div>
     </aside>
+
+    <script src="index.js"></script>
 </body>
 </html>

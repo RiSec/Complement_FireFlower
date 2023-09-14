@@ -125,13 +125,9 @@ aside{
 #wrapper a:visited { color: #000000; }
 }
 
-
-
-
 /*--------------------------------------------------------------------------------------------------------------*/
 /*スマホ対応*/
 @media screen and (max-width:768px){
-
 
 html{
     font-size: 100%;
@@ -171,8 +167,6 @@ body{
     transform: translate(-50%,-50%);
 }
 
-
-
 /*header*/
 .background {
     height: 100vh;
@@ -196,7 +190,6 @@ main{
     
 }
 main .title{
-
     margin-top: 0%;
     color: aliceblue;
     text-align: center;
@@ -205,7 +198,6 @@ main .title{
 .flex-2{
     display: none;
 }
-
 
 /*aside*/
 aside{
