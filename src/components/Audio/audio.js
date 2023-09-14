@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
-
-
 const Audio = () => {
   const location = useLocation();
   const { imageData } = location.state;
@@ -13,8 +11,6 @@ const Audio = () => {
   var mediaStreamSource;
   var meter;
   var maxi = 0;
-
-
 
   // メーターの生成
   function createAudioMeter(audioContext, clipLevel, averaging, clipLag) {
@@ -39,7 +35,6 @@ const Audio = () => {
       }
       return this.clipping;
     };
-
 
     // シャットダウン時に呼ばれる
     processor.shutdown = function () {
@@ -73,10 +68,6 @@ const Audio = () => {
     setVolume(maxi);
     //setVolume(this.volume);
 
-
-
-
-
     // ボリュームの表示
     // output.innerHTML = "ボリューム: " + this.volume.toFixed(4);
   }
@@ -98,11 +89,20 @@ const Audio = () => {
     }
   }
 
-
   return (
     <div>
       <button onClick={beginDetect}>ボリューム検出の開始</button>
-      <div class="go-explostion" id="wrapper"><Link to="/UploadPage/ImageRecievege" state={{ imageData: imageData, volume: Math.floor(volume * Math.pow(10, 2)) / Math.pow(10, 2) }}>終了</Link></div>
+      <div class="go-explostion" id="wrapper">
+        <Link
+          to="/UploadPage/ImageRecievege"
+          state={{
+            imageData: imageData,
+            volume: Math.floor(volume * Math.pow(10, 2)) / Math.pow(10, 2),
+          }}
+        >
+          終了
+        </Link>
+      </div>
       <p>ボリューム: {volume.toFixed(2)}</p>
 
       {/* <img src={imageData}></img> */}
