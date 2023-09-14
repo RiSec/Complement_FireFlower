@@ -8,7 +8,6 @@ function SlideShow() {
     "img/hanabi-1.png",
     "img/hanabi-2.png",
     "img/hanabi-3.png",
-    "img/white.png",
   );
   var num = -1;
 
@@ -28,7 +27,6 @@ function SlideShow() {
     "img-2/hanabi-1.png",
     "img-2/hanabi-2.png",
     "img-2/hanabi-3.png",
-    "img-2/white.png",
   );
   var num_2 = -1;
 
