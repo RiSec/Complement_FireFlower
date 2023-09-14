@@ -2,6 +2,7 @@ import Fireworks from "fireworks-js";
 import { useLocation } from "react-router-dom";
 
 const FireworksPage = () => {
+	const navigate = Navigator();
 	const location = useLocation();
 	const { volume } = location.state;
 	console.log(volume.volume);
@@ -49,9 +50,14 @@ const FireworksPage = () => {
 		fire();
 	}, 4000);
 
+	setTimeout(function () {
+		navigate("/UploadPage/ImageRecievege/FireworksPage/Score", {
+			state: { volume: { volume } },
+		});
+	}, 4000);
+
 	return (
 		<>
-			{/* <h1>{volume}</h1> */}
 			<center>
 				<div
 					id="container"
