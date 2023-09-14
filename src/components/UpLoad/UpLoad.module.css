@@ -1,0 +1,237 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+	html {
+		font-size: 100%;
+	}
+	img {
+		width: 100%;
+	}
+	body {
+		margin: 0;
+	}
+	a {
+		text-decoration: none;
+	}
+	/*header*/
+	.background2 {
+		height: 100vh;
+		position: relative;
+		background-color: rgb(13, 13, 96);
+	}
+
+	.button_top {
+		/* ①ボタンの色と文字の色とサイズ */
+		background-color: aliceblue;
+		color: #000000;
+		font-size: 30px;
+
+		/* ②ボタンのサイズと角丸 */
+		width: 100px;
+		height: 100px;
+		/*border-radius: 50%;*/
+
+		/* ③次に作る上向きの三角と、TOPの文字の位置を揃えるためのcss */
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	.button_top::before {
+		content: "";
+		display: inline-block;
+		width: 30px;
+		height: 10px;
+		border-bottom: 3px solid;
+		border-left: 5px solid;
+		transform: skew(-45deg);
+	}
+
+	/*section*/
+	section .button {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		background-color: aliceblue;
+		position: absolute;
+		top: 7%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	/*main*/
+	.maintext {
+		width: 100%;
+		height: 100%;
+	}
+	.text1 {
+		background-color: aliceblue;
+		position: absolute;
+		width: 60%;
+		text-align: center;
+		font-size: 2rem;
+		border-radius: 20px;
+		top: 40%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.linethrough {
+		text-decoration: line-through;
+	}
+	.text2 {
+		padding-top: 15px;
+		height: 50px;
+		width: 40%;
+		text-align: center;
+		background-color: aliceblue;
+		position: absolute;
+		border: 1px solid;
+		border-radius: 30px;
+		/*padding: 25px 15px;*/
+		top: 60%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+	/*共通*/
+	html {
+		font-size: 100%;
+	}
+	img {
+		width: 100%;
+	}
+	body {
+		margin: 0;
+		font-family: "Chokokutai", cursive;
+		font-family: "Reggae One", cursive;
+	}
+	a {
+		text-decoration: none;
+	}
+
+	/*header*/
+	.background2 {
+		height: 100vh;
+		position: relative;
+		background-color: rgb(13, 13, 96);
+	}
+	/*main*/
+
+	.maintext {
+		width: 100%;
+		height: 100%;
+	}
+	.text1 {
+		background-color: aliceblue;
+		position: absolute;
+		width: 100%;
+		text-align: center;
+		font-size: 2rem;
+		top: 40%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.linethrough {
+		text-decoration: line-through;
+	}
+	.text2 {
+		width: 60%;
+		text-align: center;
+		background-color: aliceblue;
+		position: absolute;
+		border: 1px solid;
+		border-radius: 30px;
+		padding: 0 15px;
+		top: 60%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	section .button {
+		/*background-color: aquamarine;*/
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		position: absolute;
+		top: 5%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		margin-top: 50px;
+	}
+	.button_top {
+		/* ①ボタンの色と文字の色とサイズ */
+		background-color: rgb(13, 13, 96);
+		color: aliceblue;
+		font-size: 17px;
+
+		/* ②ボタンのサイズと角丸 */
+		width: 70px;
+		height: 70px;
+		/*border-radius: 50%;*/
+
+		/* ③次に作る上向きの三角と、TOPの文字の位置を揃えるためのcss */
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		/*flex-direction: column;*/
+	}
+	.button_top::before {
+		content: "";
+		display: inline-block;
+		width: 15px;
+		height: 8px;
+		border-bottom: 3px solid;
+		border-left: 5px solid;
+		transform: skew(-45deg);
+	}
+
+	/*aside*/
+	/*aside {
+		width: 100%;
+		height: 57px;
+		position: absolute;
+		top: 96%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		display: flex;
+		justify-content: space-between;
+	}*/
+	.home {
+		background-color: rgba(255, 255, 255, 0.5);
+		margin-left: 50px;
+	}
+	.home img {
+		margin: 0 auto;
+		width: 50px;
+		height: 50px;
+	}
+	.ranking {
+		background-color: rgba(255, 255, 255, 0.5);
+		margin-right: 50px;
+	}
+	.ranking img {
+		width: 50px;
+		height: 50px;
+	}
+
+	.file {
+		position: absolute;
+		opacity: 0;
+		width: 10px;
+	}
+	.fileUploadBtn {
+		display: inline-block;
+		padding: 1rem 2rem;
+		background: white;
+		color: black;
+		cursor: pointer;
+		border-radius: 30px;
+	}
+	.fileUploadBtn:hover,
+	.fileUploadBtn:focus {
+		filter: brightness(1.2);
+	}
+}

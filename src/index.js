@@ -9,7 +9,6 @@ import Audio from "./components/Audio/audio";
 import ImageReceive from "./components/UpLoad/ImageReceive";
 import FireworksPage from "./components/UpLoad/FireworksPage";
 import UpLoad from "./components/UpLoad";
-import Score from "./components/Score/Score";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -24,10 +23,6 @@ root.render(
 				path="/UploadPage/ImageRecievege/FireworksPage"
 				element={<FireworksPage />}
 			/>
-			<Route
-				path="/UploadPage/ImageRecievege/FireworksPage/Score"
-				element={<Score />}
-			></Route>
 		</Routes>
 	</BrowserRouter>
 );

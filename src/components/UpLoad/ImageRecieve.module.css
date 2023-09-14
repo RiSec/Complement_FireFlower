@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+	html {
+		font-size: 100%;
+
+		background-color: #0d0d60;
+	}
+
+	body {
+		max-height: 844px;
+		/*background-image: url(./img/event013.png) !important;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center top;*/
+		margin: 0;
+		font-family: "Chokokutai", cursive;
+		font-family: "Reggae One", cursive;
+	}
+}
+
+/*--------------------------------------------------------------------------------------------------------------*/
+/*スマホ対応*/
+@media screen and (max-width: 768px) {
+	html {
+		margin-bottom: -10px;
+		font-size: 100%;
+		/*background-color: rgb(18, 18, 95);*/
+	}
+
+	/*header*/
+	.background {
+		height: 100vh;
+		position: relative;
+		background-color: rgb(13, 13, 96);
+		margin-bottom: 0;
+
+		background-repeat: no-repeat;
+		background-position: center top;
+		background-size: contain;
+	}
+	.cent {
+		padding: 100px 0;
+	}
+}

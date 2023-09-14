@@ -1,0 +1,189 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+	html {
+		font-size: 100%;
+	}
+	img {
+		width: 100%;
+	}
+	body {
+		margin: 0;
+	}
+	a {
+		text-decoration: none;
+	}
+	/*header*/
+	.background {
+		height: 100vh;
+		position: relative;
+		background-color: rgb(13, 13, 96);
+	}
+}
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+	/*共通*/
+	html {
+		font-size: 100%;
+	}
+	img {
+		width: 100%;
+	}
+	body {
+		max-height: 844px;
+		margin: 0;
+		font-family: "Chokokutai", cursive;
+		font-family: "Reggae One", cursive;
+	}
+	a {
+		text-decoration: none;
+	}
+}
+
+/*header*/
+header {
+	height: 100vh;
+	position: relative;
+	background-color: rgb(13, 13, 96);
+	/*background-image: url(../img/maiku.png);*/
+}
+
+/*section*/
+section .button {
+	/*background-color: aquamarine;*/
+	position: absolute;
+	top: 5%;
+	left: 10%;
+	transform: translate(-50%, -50%);
+	margin-top: 50px;
+	/*top: 0%;
+	left: 15%;
+	transform: translate(-50%, -50%);
+	margin-top: 50px;*/
+}
+
+.button_top {
+	/* ①ボタンの色と文字の色とサイズ */
+	background-color: rgb(13, 13, 96);
+	color: aliceblue;
+	font-size: 17px;
+
+	/* ②ボタンのサイズと角丸 */
+	width: 70px;
+	height: 70px;
+	/*border-radius: 50%;*/
+
+	/* ③次に作る上向きの三角と、TOPの文字の位置を揃えるためのcss */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*flex-direction: column;*/
+}
+.button_top::before {
+	content: "";
+	display: inline-block;
+	width: 15px;
+	height: 8px;
+	border-bottom: 3px solid;
+	border-left: 5px solid;
+	transform: skew(-45deg);
+}
+
+/*main*/
+.shout {
+	/*display: none;*/
+	color: aliceblue;
+	/*background-color: aqua;*/
+	font-size: 4rem;
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.voice {
+	width: 200px;
+	height: 50px;
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.voice img {
+	background-color: blue;
+}
+.REC {
+	background-color: rgb(79, 77, 77);
+	color: aliceblue;
+	width: 50%;
+	height: 17%;
+	text-align: center;
+	border: 3px solid aliceblue;
+	border-radius: 20px;
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.REC .text {
+	margin-bottom: 10px;
+	font-size: 1.8rem;
+}
+.REC .color button {
+	margin: 0 auto;
+	background: green;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+}
+.REC .red {
+	background: red;
+}
+
+/*aside*/
+aside {
+	width: 100%;
+	background-color: rgba(255, 255, 255, 1);
+	height: 57px;
+	position: absolute;
+	top: 96%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	justify-content: space-between;
+}
+.home {
+	background-color: rgba(255, 255, 255, 0.5);
+	margin-left: 50px;
+}
+.home img {
+	margin: 0 auto;
+	width: 50px;
+	height: 50px;
+}
+.ranking {
+	background-color: rgba(255, 255, 255, 0.5);
+	margin-right: 50px;
+}
+.ranking img {
+	width: 50px;
+	height: 50px;
+}
+
+.wrapper a {
+	color: aliceblue;
+	font-size: 2rem;
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.volumevalue p {
+	color: aliceblue;
+	width: 100%;
+	font-size: 15px;
+	position: absolute;
+	text-align: center;
+	top: 95%;
+}

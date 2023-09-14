@@ -65,7 +65,7 @@ export default function ReductionWidth({
 						navigate("/UploadPage/ImageRecievege/FireworksPage", {
 							state: { volume: { volume } },
 						});
-					}, 4000);
+					}, 1000);
 					//  fire();
 				}
 			}, 20);
@@ -88,5 +88,5 @@ export default function ReductionWidth({
 				}
 			);
 		}
-	}, 4000);
+	}, 1000);
 }

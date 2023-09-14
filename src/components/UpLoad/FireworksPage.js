@@ -1,22 +1,22 @@
 import Fireworks from "fireworks-js";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
+import styles from "./Fireworks.module.css";
 
 const FireworksPage = () => {
-	const navigate = Navigator();
+	const navigate = new useNavigate();
 	const location = useLocation();
 	const { volume } = location.state;
 	console.log(volume.volume);
 
 	const options = {
 		//減衰の大きさ
-		//decay:
 		//閃光
-		friction: volume.volume + 0.8,
+		friction: volume.volume * 2.5,
 		//咲
 		particles: 200,
 		//線の長さ
 		traceLength: 10.0,
-		traceSpeed: 2,
+		traceSpeed: 6,
 		//線の太さ
 		lineWidth: {
 			explosion: {
@@ -31,7 +31,7 @@ const FireworksPage = () => {
 		acceleration: 1,
 		sound: {
 			enabled: false,
-			files: ["sound2.mp3"],
+			files: ["sound01.mp3"],
 			volume: {
 				min: 60,
 				max: 80,
@@ -48,22 +48,19 @@ const FireworksPage = () => {
 
 	setTimeout(function () {
 		fire();
-	}, 4000);
+	}, 500);
 
 	setTimeout(function () {
-		navigate("/UploadPage/ImageRecievege/FireworksPage/Score", {
-			state: { volume: { volume } },
-		});
-	}, 4000);
+		navigate("/");
+	}, 7000);
 
 	return (
 		<>
-			<center>
-				<div
-					id="container"
-					style={{ backgroundColor: "black", width: 500, height: 800 }}
-				></div>
-			</center>
+			<div className={styles.background}>
+				<center>
+					<div id="container" style={{ height: "100vh" }}></div>
+				</center>
+			</div>
 		</>
 	);
 };
