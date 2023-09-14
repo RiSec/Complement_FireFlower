@@ -1,41 +1,7 @@
-import "./style.css";
+import styles from "./TopPage.module.css";
 import { Link } from "react-router-dom";
 
 const TopPage = () => {
-	// var pics_src = new Array("/img/hanabi-1.png", "/img/hanabi-2.png", "/img/hanabi-3.png", "/img/white.png");
-	// var num = -1;
-
-	// function slideshow_timer1() {
-	//     console.log("slideshow_timer1");
-	//     if (num == 3) {
-	//         num = 0;
-	//     }
-	//     else {
-	//         num++;
-	//     }
-	//     //document.getElementById("mypic-1",).src = pics_src[num];
-	//     setMyPic1(pics_src[num]);
-	//     // setInterval(slideshow_timer1(), 1000);
-	//     console.log("slideshow_timer1 did");
-
-	// }
-
-	// /*左側*/
-	// var pics_src = new Array("/img-2/hanabi-1.png", "/img-2/hanabi-2.png", "/img-2/hanabi-3.png", "/img-2/white.png");
-	// var num_2 = -1;
-
-	// function slideshow_timer2() {
-	//     if (num_2 == 3) {
-	//         num_2 = 0;
-	//     }
-	//     else {
-	//         num_2++;
-	//     }
-	//     //document.getElementById("mypic-2",).src = pics_src[num_2];
-	//     // setTimeout("slideshow_timer2()", 1000);
-	// }
-	// slideshow_timer2();
-
 	return (
 		<>
 			<head>
@@ -44,7 +10,7 @@ const TopPage = () => {
 					name="viewport"
 					content="width=device-width, initial-scale=1.0"
 				></meta>
-				<link rel="stylesheet" type="text/css" href="style.css"></link>
+
 				<meta name="viewport" content="width=device-width"></meta>
 				{/* <!--googlefonts--> */}
 				<link rel="preconnect" href="https://fonts.googleapis.com"></link>
@@ -71,47 +37,29 @@ const TopPage = () => {
 				<title>uppun bakuhatu</title>
 			</head>
 			<body>
-				<img
-					id="mypic-1"
-					class="mypic-1"
-					src="/img/hanabi-1.png"
-					width="400"
-					height="300"
-					alt="fireworks"
-				></img>
-				<img
-					id="mypic-2"
-					class="mypic-2"
-					src="/img-2/hanabi-1.png"
-					width="400"
-					height="300"
-					alt="fireworks"
-				></img>
 				<header>
-					<div class="background"></div>
+					<div class={styles.background}></div>
 				</header>
 
-				<main>
-					<div class="flex-1">
-						<p class="title">鬱 憤 爆 散</p>
+				<div class={styles.main}>
+					<div class={styles.flex1}>
+						<p class={styles.title}>鬱 憤 爆 散</p>
 					</div>
-					<div class="flex-2">
-						<p class="attention">
+					<div class={styles.flex2}>
+						<p class={styles.attention}>
 							お使いの端末は非推奨です。フォントが崩れる場合があります。
 						</p>
 					</div>
-				</main>
+				</div>
 
 				<aside>
-					<nav>
-						<div class="go-explostion" id="wrapper">
-							<Link to="/UploadPage">打ち上げる</Link>
+					<nav className={styles.nav_menu}>
+						<div className={`${styles.wrapper} ${styles.score}`}>
+							<Link to="/UploadPage">
+								<p className={styles.utiage_p}>打ち上げる</p>
+							</Link>
 						</div>
 					</nav>
-
-					<div class="score" id="wrapper">
-						<a href="../score/index.html">過去のスコア</a>
-					</div>
 				</aside>
 			</body>
 		</>
@@ -119,3 +67,6 @@ const TopPage = () => {
 };
 
 export default TopPage;
+
+/*<div className={styles.button_to_}>*/
+/*<div className={`${styles.wrapper} ${styles.score}`}>*/

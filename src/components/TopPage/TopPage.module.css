@@ -3,11 +3,14 @@
 @media screen and (min-width: 768px) {
 	html {
 		font-size: 100%;
-		/*background-color: rgb(18, 18, 95);*/
+
+		background-color: #0d0d60;
 	}
+
 	img {
 		width: 100%;
 	}
+
 	body {
 		max-height: 844px;
 		/*background-image: url(./img/event013.png) !important;
@@ -20,7 +23,7 @@
 	}
 
 	/*javascript*/
-	.mypic-1 {
+	.mypic1 {
 		position: absolute;
 		z-index: 100;
 		width: 5rem;
@@ -29,7 +32,8 @@
 		left: 67%;
 		transform: translate(-50%, -50%);
 	}
-	.mypic-2 {
+
+	.mypic2 {
 		position: absolute;
 		z-index: 100;
 		width: 5rem;
@@ -45,14 +49,14 @@
 		position: relative;
 		background-color: rgb(13, 13, 96);
 		margin-bottom: 0;
-		background-image: url(img/event013.png);
+		background-image: url(./img/event013.png);
 		background-repeat: no-repeat;
 		background-size: contain;
 		background-position: top center;
 	}
 
 	/*title*/
-	main {
+	.main {
 		width: 100%;
 		background-color: rgba(0, 0, 0, 0.5);
 		height: 200px;
@@ -63,7 +67,8 @@
 		display: flex;
 		justify-content: space-between;
 	}
-	main .title {
+
+	.main .title {
 		/*background-color:aquamarine;*/
 		color: aliceblue;
 		margin-left: 50px;
@@ -71,11 +76,13 @@
 		vertical-align: middle;
 		font-size: 5rem;
 	}
-	main .flex-2 {
+
+	.flex2 {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 	}
+
 	main .attention {
 		/*background-color: aqua;*/
 		margin-right: 50px;
@@ -89,37 +96,53 @@
 	}
 
 	/*aside*/
-	aside {
-		width: 60%;
-		/*background-color: aqua;*/
-		/*margin-bottom: 30%;*/
-		position: absolute;
-		top: 75%;
-		left: 50%;
-		transform: translate(-50%, -50%);
+	.aside {
+		width: 80%;
 	}
-	#wrapper {
-		width: 70%;
-		padding: 25px 0;
+
+	.wrapper {
+		justify-content: center;
+		display: flex;
+		margin: 0 auto;
+		z-index: 100;
+		top: -150px;
+		position: relative;
 		border: 1px solid;
 		border-radius: 30px;
-		margin: 75px auto;
+		margin: 10px auto;
 		background-color: white;
 		text-align: center;
 		font-size: 2rem;
 	}
-	#wrapper a {
+
+	.wrapper a {
 		text-decoration: none;
 		color: rgb(rgb(45, 43, 43));
 	}
-	#wrapper a:hover {
+
+	.wrapper a:hover {
 		opacity: 0.5;
 	}
-	#wrapper a:link {
+
+	.wrapper a:link {
 		color: #000000;
 	}
-	#wrapper a:visited {
+
+	.wrapper a:visited {
 		color: #000000;
+	}
+
+	.button_to_ {
+		padding: 10px;
+	}
+
+	.nav_menu {
+		margin-top: -30px;
+		padding: 0 30%;
+	}
+
+	.utiage_p {
+		padding: 0px 30px;
 	}
 }
 
@@ -127,12 +150,15 @@
 /*スマホ対応*/
 @media screen and (max-width: 768px) {
 	html {
+		margin-bottom: -10px;
 		font-size: 100%;
 		/*background-color: rgb(18, 18, 95);*/
 	}
+
 	img {
 		width: 100%;
 	}
+
 	body {
 		max-height: 844px;
 		/*background-image: url(./img/event013.png) !important;
@@ -145,22 +171,23 @@
 	}
 
 	/*javascript*/
-	.mypic-1 {
+	.mypic1 {
 		position: absolute;
 		z-index: 100;
 		width: 3rem;
 		height: 3rem;
-		top: 60%;
-		left: 78%;
+		top: 77%;
+		left: 79%;
 		transform: translate(-50%, -50%);
 	}
-	.mypic-2 {
+
+	.mypic2 {
 		position: absolute;
 		z-index: 100;
 		width: 3rem;
 		height: 3rem;
-		top: 60%;
-		left: 22%;
+		top: 77%;
+		left: 20%;
 		transform: translate(-50%, -50%);
 	}
 
@@ -170,62 +197,81 @@
 		position: relative;
 		background-color: rgb(13, 13, 96);
 		margin-bottom: 0;
-		background-image: url(img/event013.png);
+		background-image: url(./img/event013.png);
 		background-repeat: no-repeat;
 		background-position: center top;
 		background-size: contain;
 	}
 
 	/*title*/
-	main {
+	.main {
 		width: 100%;
 		/*background-color: aqua;*/
 		position: absolute;
-		top: 40%;
+		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 	}
-	main .title {
+
+	.main .title {
 		margin-top: 0%;
 		color: aliceblue;
 		text-align: center;
-		font-size: 3rem;
+		font-size: 4rem;
 	}
-	.flex-2 {
+
+	.flex2 {
 		display: none;
 	}
 
 	/*aside*/
 	aside {
-		width: 100%;
-		/*background-color: aqua;*/
-		margin-bottom: 30%;
-		position: absolute;
-		top: 70%;
-		left: 50%;
 		transform: translate(-50%, -50%);
 	}
-	#wrapper {
-		width: 70%;
-		padding: 25px 0;
+
+	.wrapper {
+		justify-content: center;
+		display: flex;
+		margin: 0 auto;
+		z-index: 100;
+		top: -200px;
+		position: relative;
 		border: 1px solid;
 		border-radius: 30px;
-		margin: 75px auto;
+		margin: 10px auto;
 		background-color: white;
 		text-align: center;
 		font-size: 2rem;
 	}
-	#wrapper a {
+
+	.wrapper a {
 		text-decoration: none;
 		color: rgb(rgb(45, 43, 43));
 	}
-	#wrapper a:hover {
+
+	.wrapper a:hover {
 		opacity: 0.5;
 	}
-	#wrapper a:link {
+
+	.wrapper a:link {
 		color: #000000;
 	}
-	#wrapper a:visited {
+
+	.wrapper a:visited {
 		color: #000000;
+	}
+
+	/*###*/
+
+	.nav_menu {
+		width: 100%;
+		padding: 0 10%;
+		background-color: #0d0d60;
+	}
+	/*.button_to_ {
+	}*/
+
+	.utiage_p {
+		padding: 0px 30px;
 	}
 }
