@@ -1,277 +1,283 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 768px) {
-	html {
-		font-size: 100%;
+  html {
+    font-size: 100%;
 
-		background-color: #0d0d60;
-	}
+    background-color: #0d0d60;
+  }
 
-	img {
-		width: 100%;
-	}
+  img {
+    width: 100%;
+  }
 
-	body {
-		max-height: 844px;
-		/*background-image: url(./img/event013.png) !important;
+  body {
+    max-height: 844px;
+    /*background-image: url(./img/event013.png) !important;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center top;*/
-		margin: 0;
-		font-family: "Chokokutai", cursive;
-		font-family: "Reggae One", cursive;
-	}
+    margin: 0;
+    font-family: "Chokokutai", cursive;
+    font-family: "Reggae One", cursive;
+  }
 
-	/*javascript*/
-	.mypic1 {
-		position: absolute;
-		z-index: 100;
-		width: 5rem;
-		height: 5rem;
-		top: 65%;
-		left: 67%;
-		transform: translate(-50%, -50%);
-	}
+  /*javascript*/
+  /*.mypic1 {
+    position: absolute;
+    z-index: 100;
+    width: 5rem;
+    height: 5rem;
+    top: 65%;
+    left: 67%;
+    transform: translate(-50%, -50%);
+  }
 
-	.mypic2 {
-		position: absolute;
-		z-index: 100;
-		width: 5rem;
-		height: 5rem;
-		top: 65%;
-		left: 33%;
-		transform: translate(-50%, -50%);
-	}
+  .mypic2 {
+    position: absolute;
+    z-index: 100;
+    width: 5rem;
+    height: 5rem;
+    top: 65%;
+    left: 33%;
+    transform: translate(-50%, -50%);
+  }*/
 
-	/*header*/
-	.background {
-		height: 100vh;
-		position: relative;
-		background-color: rgb(13, 13, 96);
-		margin-bottom: 0;
-		background-image: url(./img/event013.png);
-		background-repeat: no-repeat;
-		background-size: contain;
-		background-position: top center;
-	}
+  /*header*/
+  .background {
+    height: 100vh;
+    position: relative;
+    background-color: rgb(13, 13, 96);
+    margin-bottom: 0;
+    background-image: url(./img/event013.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+  }
 
-	/*title*/
-	.main {
-		width: 100%;
-		background-color: rgba(0, 0, 0, 0.5);
-		height: 200px;
-		position: absolute;
-		top: 2%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		display: flex;
-		justify-content: space-between;
-	}
+  /*title*/
+  .main {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 200px;
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+  }
 
-	.main .title {
-		/*background-color:aquamarine;*/
-		color: aliceblue;
-		margin-left: 50px;
-		text-align: center;
-		vertical-align: middle;
-		font-size: 5rem;
-	}
+  .main .title {
+    /*background-color:aquamarine;*/
+    color: aliceblue;
+    margin-left: 50px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 5rem;
+  }
 
-	.flex2 {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-	}
+  .flex2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-	main .attention {
-		/*background-color: aqua;*/
-		margin-right: 50px;
-		text-align: center;
-		margin-top: 100px;
-		font-size: 2rem;
-		color: aliceblue;
-		font-family: "Chokokutai", cursive;
-		font-family: "Reggae One", cursive;
-		font-family: "Yuji Hentaigana Akebono", cursive;
-	}
+  .attention {
+    /*background-color: aqua;*/
+    margin-right: 50px;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 2rem;
+    color: aliceblue;
+    font-family: "Chokokutai", cursive;
+    font-family: "Reggae One", cursive;
+    font-family: "Yuji Hentaigana Akebono", cursive;
+  }
 
-	/*aside*/
-	.aside {
-		width: 80%;
-	}
+  /*aside*/
+  .aside {
+    width: 100%;
+  }
 
-	.wrapper {
-		justify-content: center;
-		display: flex;
-		margin: 0 auto;
-		z-index: 100;
-		top: -150px;
-		position: relative;
-		border: 1px solid;
-		border-radius: 30px;
-		margin: 10px auto;
-		background-color: white;
-		text-align: center;
-		font-size: 2rem;
-	}
+  .wrapper {
+    width: 100%;
+    height: 120px;
+    /*justify-content: center;
+    display: flex;
+    margin: 0 auto;*/
+    z-index: 100;
+    /*top: -150px;*/
+    position: absolute;
+    border: 1px solid;
+    border-radius: 30px;
+    /*margin: 10px auto;*/
+    background-color: white;
+    text-align: center;
+    font-size: 2rem;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
-	.wrapper a {
-		text-decoration: none;
-		color: rgb(rgb(45, 43, 43));
-	}
+  .wrapper a {
+    text-decoration: none;
+    color: rgb(rgb(45, 43, 43));
+  }
 
-	.wrapper a:hover {
-		opacity: 0.5;
-	}
+  .wrapper a:hover {
+    opacity: 0.5;
+  }
 
-	.wrapper a:link {
-		color: #000000;
-	}
+  .wrapper a:link {
+    color: #000000;
+  }
 
-	.wrapper a:visited {
-		color: #000000;
-	}
+  .wrapper a:visited {
+    color: #000000;
+  }
 
-	.button_to_ {
-		padding: 10px;
-	}
+  .button_to_ {
+    padding: 10px;
+  }
 
-	.nav_menu {
-		margin-top: -30px;
-		padding: 0 30%;
-	}
+  /*.nav_menu {
+   margin-top: -30px;
+    padding: 0 30%;
+    background-color: aqua;
+  }*/
 
-	.utiage_p {
-		padding: 0px 30px;
-	}
+  .utiage_p {
+    padding: 0px 30px;
+  }
 }
 
 /*--------------------------------------------------------------------------------------------------------------*/
 /*スマホ対応*/
 @media screen and (max-width: 768px) {
-	html {
-		margin-bottom: -10px;
-		font-size: 100%;
-		/*background-color: rgb(18, 18, 95);*/
-	}
+  html {
+    margin-bottom: -10px;
+    font-size: 100%;
+    /*background-color: rgb(18, 18, 95);*/
+  }
 
-	img {
-		width: 100%;
-	}
+  img {
+    width: 100%;
+  }
 
-	body {
-		max-height: 844px;
-		/*background-image: url(./img/event013.png) !important;
+  body {
+    max-height: 844px;
+    /*background-image: url(./img/event013.png) !important;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center top;*/
-		margin: 0;
-		font-family: "Chokokutai", cursive;
-		font-family: "Reggae One", cursive;
-	}
+    margin: 0;
+    font-family: "Chokokutai", cursive;
+    font-family: "Reggae One", cursive;
+  }
 
-	/*javascript*/
-	.mypic1 {
-		position: absolute;
-		z-index: 100;
-		width: 3rem;
-		height: 3rem;
-		top: 77%;
-		left: 79%;
-		transform: translate(-50%, -50%);
-	}
+  /*javascript*/
+  /*.mypic1 {
+    position: absolute;
+    z-index: 100;
+    width: 3rem;
+    height: 3rem;
+    top: 77%;
+    left: 79%;
+    transform: translate(-50%, -50%);
+  }
 
-	.mypic2 {
-		position: absolute;
-		z-index: 100;
-		width: 3rem;
-		height: 3rem;
-		top: 77%;
-		left: 20%;
-		transform: translate(-50%, -50%);
-	}
+  .mypic2 {
+    position: absolute;
+    z-index: 100;
+    width: 3rem;
+    height: 3rem;
+    top: 77%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+  }*/
 
-	/*header*/
-	.background {
-		height: 100vh;
-		position: relative;
-		background-color: rgb(13, 13, 96);
-		margin-bottom: 0;
-		background-image: url(./img/event013.png);
-		background-repeat: no-repeat;
-		background-position: center top;
-		background-size: contain;
-	}
+  /*header*/
+  .background {
+    height: 100vh;
+    position: relative;
+    background-color: rgb(13, 13, 96);
+    margin-bottom: 0;
+    background-image: url(./img/event013.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+  }
 
-	/*title*/
-	.main {
-		width: 100%;
-		/*background-color: aqua;*/
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	}
+  /*title*/
+  .main {
+    width: 100%;
+    /*background-color: aqua;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
-	.main .title {
-		margin-top: 0%;
-		color: aliceblue;
-		text-align: center;
-		font-size: 4rem;
-	}
+  .main .title {
+    margin-top: 0%;
+    color: aliceblue;
+    text-align: center;
+    font-size: 4rem;
+  }
 
-	.flex2 {
-		display: none;
-	}
+  .flex2 {
+    display: none;
+  }
 
-	/*aside*/
-	aside {
-		transform: translate(-50%, -50%);
-	}
+  /*aside*/
+  aside {
+    transform: translate(-50%, -50%);
+  }
 
-	.wrapper {
-		justify-content: center;
-		display: flex;
-		margin: 0 auto;
-		z-index: 100;
-		top: -200px;
-		position: relative;
-		border: 1px solid;
-		border-radius: 30px;
-		margin: 10px auto;
-		background-color: white;
-		text-align: center;
-		font-size: 2rem;
-	}
+  .wrapper {
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+    z-index: 100;
+    top: -200px;
+    position: relative;
+    border: 1px solid;
+    border-radius: 30px;
+    margin: 10px auto;
+    background-color: white;
+    text-align: center;
+    font-size: 2rem;
+  }
 
-	.wrapper a {
-		text-decoration: none;
-		color: rgb(rgb(45, 43, 43));
-	}
+  .wrapper a {
+    text-decoration: none;
+    color: rgb(rgb(45, 43, 43));
+  }
 
-	.wrapper a:hover {
-		opacity: 0.5;
-	}
+  .wrapper a:hover {
+    opacity: 0.5;
+  }
 
-	.wrapper a:link {
-		color: #000000;
-	}
+  .wrapper a:link {
+    color: #000000;
+  }
 
-	.wrapper a:visited {
-		color: #000000;
-	}
+  .wrapper a:visited {
+    color: #000000;
+  }
 
-	/*###*/
+  /*###*/
 
-	.nav_menu {
-		width: 100%;
-		padding: 0 10%;
-		background-color: #0d0d60;
-	}
-	/*.button_to_ {
+  .nav_menu {
+    width: 100%;
+    padding: 0 10%;
+    background-color: #0d0d60;
+  }
+  /*.button_to_ {
 	}*/
 
-	.utiage_p {
-		padding: 0px 30px;
-	}
+  .utiage_p {
+    padding: 0px 30px;
+  }
 }
